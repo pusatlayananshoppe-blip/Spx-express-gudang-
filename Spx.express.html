@@ -1,0 +1,138 @@
+<html style="margin:0;padding:0;">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+(function(){
+  var s = document.createElement('style');
+  s.textContent = ':root{--bg:#f6f7f9;--card:#ffffff;--text:#0f172a;--muted:#5b6b7f;--accent:#f97316;--accent-soft:rgba(249,115,22,.14);--accent2:#0d9488;--accent2-soft:rgba(13,148,136,.14);--border:rgba(15,23,42,.08);--dark:#0b3538;--dark2:#0e4a4e;--wa:#16a34a}'
+  + 'html{scroll-behavior:smooth}body{font-family:"Archivo",sans-serif;background:var(--bg);color:var(--text);margin:0;overflow-x:hidden}'
+  + '.reveal{opacity:0;transform:translateY(22px);animation:fadeUp .65s ease forwards}.reveal:nth-child(2){animation-delay:.1s}.reveal:nth-child(3){animation-delay:.2s}.reveal:nth-child(4){animation-delay:.3s}.reveal:nth-child(5){animation-delay:.4s}.reveal:nth-child(6){animation-delay:.5s}'
+  + '@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}'
+  + '.card-hover{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}.card-hover:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(15,23,42,.10);border-color:var(--accent)}'
+  + '.hub-btn{transition:all .2s ease;cursor:pointer}.hub-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}'
+  + '.wa-btn{transition:transform .2s ease,box-shadow .2s ease}.wa-btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(22,163,74,.35)}'
+  + '.nav-link{position:relative;transition:color .2s}.nav-link::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--accent);transition:width .25s}.nav-link:hover::after{width:100%}'
+  + '.float-anim{animation:floaty 5s ease-in-out infinite}@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}'
+  + '.tick{color:var(--accent);font-weight:700;margin-right:8px}'
+  + '@media(max-width:640px){.hero-title{font-size:2rem!important}}';
+  document.head.appendChild(s);
+})();
+</script>
+<div style="box-sizing:border-box;">
+
+  <!-- NAVBAR -->
+  <nav style="position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);">
+    <div style="max-width:1120px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+      <a href="#top" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);">
+        <svg width="38" height="38" viewBox="0 0 48 48" fill="none"><rect x="4" y="10" width="40" height="30" rx="4" fill="#f97316"/><path d="M4 18 L24 28 L44 18" stroke="#fff" stroke-width="2.5" fill="none" stroke-linejoin="round"/><path d="M24 28 L24 40" stroke="#fff" stroke-width="2.5"/><path d="M14 6 L24 12 L34 6" stroke="#0d9488" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div><div style="font-weight:900;font-size:1.25rem;letter-spacing:-.02em;line-height:1;">SPX <span style="color:var(--accent);">Express</span></div><div style="font-size:.65rem;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;margin-top:2px;">Warehousing &amp; Logistics</div></div>
+      </a>
+      <div style="display:flex;align-items:center;gap:22px;flex-wrap:wrap;">
+        <div style="display:flex;gap:20px;flex-wrap:wrap;">
+          <a href="#layanan" class="nav-link" style="text-decoration:none;color:var(--text);font-weight:500;font-size:.92rem;">Layanan</a>
+          <a href="#lokasi" class="nav-link" style="text-decoration:none;color:var(--text);font-weight:500;font-size:.92rem;">Lokasi Hub</a>
+          <a href="#kontak" class="nav-link" style="text-decoration:none;color:var(--text);font-weight:500;font-size:.92rem;">Kontak</a>
+        </div>
+        <a href="https://wa.me/6282183764505?text=Halo%20SPX%20Express%2C%20saya%20butuh%20informasi%20layanan." target="_blank" rel="noopener" class="wa-btn" style="display:inline-flex;align-items:center;gap:8px;background:var(--wa);color:#fff;font-weight:700;font-size:.9rem;padding:10px 18px;border-radius:999px;text-decoration:none;min-height:44px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+          Chat WA
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="top" style="background:linear-gradient(135deg,var(--dark) 0%,var(--dark2) 100%);color:#fff;position:relative;overflow:hidden;">
+    <div style="max-width:1120px;margin:0 auto;padding:64px 20px 72px;display:flex;gap:48px;align-items:center;flex-wrap:wrap;">
+      <div style="flex:1 1 420px;min-width:280px;" class="reveal">
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(249,115,22,.18);border:1px solid rgba(249,115,22,.4);color:#fdba74;padding:6px 14px;border-radius:999px;font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:20px;">
+          <span style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;"></span>Pergudangan &amp; Logistik
+        </div>
+        <h1 class="hero-title" style="font-size:3rem;font-weight:900;line-height:1.08;letter-spacing:-.03em;margin:0 0 18px;">SPX Express,<br><span style="background:linear-gradient(100deg,#f97316,#fb923c);-webkit-background-clip:text;background-clip:text;color:transparent;">Siap Melayani.</span></h1>
+        <p style="color:#cbd5e1;font-size:1.05rem;line-height:1.7;max-width:480px;margin:0 0 28px;">Mitra terpercaya untuk cek resi, cek paket, return &amp; pickup, hingga penanganan kendala paket lainnya. Hadir di dua hub strategis: <strong style="color:#fff;">Cikarang Barat (Bekasi)</strong> dan <strong style="color:#fff;">Rambipuji (Jember)</strong>.</p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;">
+          <a href="#layanan" style="display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;font-weight:700;padding:14px 26px;border-radius:12px;text-decoration:none;font-size:.95rem;min-height:48px;">Lihat Layanan<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="#lokasi" style="display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;font-weight:700;padding:14px 26px;border-radius:12px;text-decoration:none;font-size:.95rem;border:1.5px solid rgba(255,255,255,.35);min-height:48px;">Lokasi Hub</a>
+        </div>
+        <div style="display:flex;gap:28px;margin-top:36px;flex-wrap:wrap;">
+          <div><div style="font-size:1.6rem;font-weight:900;color:#fdba74;">2</div><div style="font-size:.78rem;color:#94a3b8;">Hub Strategis</div></div>
+          <div><div style="font-size:1.6rem;font-weight:900;color:#fdba74;">4+</div><div style="font-size:.78rem;color:#94a3b8;">Layanan Aktif</div></div>
+          <div><div style="font-size:1.6rem;font-weight:900;color:#fdba74;">24/7</div><div style="font-size:.78rem;color:#94a3b8;">Respon WA Cepat</div></div>
+        </div>
+      </div>
+      <div style="flex:1 1 380px;min-width:280px;" class="reveal float-anim">
+        <div style="border-radius:20px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.4);border:4px solid rgba(255,255,255,.1);">
+          <img src="https://p16-flow-image-sign.ibyteimg.com/tos-mya-i-3rsxbfecgb/rc_gen_image/4b784c8620b345e18cf141a5a8866cfc.jpeg~tplv-0es2k971ck-image.image?rcl=2026101403471500115083017A76F5BD36&rk3s=8e244e95&rrcfp=02a80fc2&x-expires=1794512921&x-signature=pCEniLQ%2FkAtokd71OK5u14BlwOM%3D" alt="Ilustrasi gudang logistik SPX Express" loading="lazy" onerror="this.style.display='none'" style="width:100%;height:auto;display:block;">
+        </div>
+      </div>
+    </div>
+    <div style="position:absolute;bottom:-1px;left:0;right:0;line-height:0;"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="width:100%;height:40px;"><path d="M0,40 C480,80 960,0 1440,40 L1440,60 L0,60 Z" fill="#f6f7f9"/></svg></div>
+  </section>
+
+  <!-- LAYANAN -->
+  <section id="layanan" style="padding:72px 20px;">
+    <div style="max-width:1120px;margin:0 auto;">
+      <div style="text-align:center;max-width:640px;margin:0 auto 40px;" class="reveal">
+        <p style="font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0 0 10px;">Layanan Kami</p>
+        <h2 style="font-size:2.1rem;font-weight:900;letter-spacing:-.02em;margin:0 0 14px;line-height:1.2;">Semua Kebutuhan Paket, Satu Pintu Layanan</h2>
+        <p style="color:var(--muted);line-height:1.7;margin:0;">Pilih layanan yang Anda butuhkan — pilih hub tujuan, lalu terhubung langsung via WhatsApp.</p>
+      </div>
+      <div style="display:flex;justify-content:center;gap:10px;margin-bottom:36px;flex-wrap:wrap;" class="reveal">
+        <span style="align-self:center;font-size:.85rem;color:var(--muted);font-weight:500;">Hub tujuan:</span>
+        <button class="hub-btn active" data-hub="cikarang" style="min-height:44px;padding:8px 18px;border-radius:999px;border:1.5px solid var(--border);background:#fff;color:var(--text);font-weight:600;font-size:.85rem;">Cikarang Barat</button>
+        <button class="hub-btn" data-hub="rambipuji" style="min-height:44px;padding:8px 18px;border-radius:999px;border:1.5px solid var(--border);background:#fff;color:var(--text);font-weight:600;font-size:.85rem;">Rambipuji</button>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;">
+        <div class="card-hover reveal" style="background:var(--card);border:1px solid var(--border);border-radius:18px;padding:28px 24px;box-shadow:0 1px 3px rgba(0,0,0,.05);">
+          <div style="width:52px;height:52px;border-radius:14px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:18px;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3 style="font-size:1.15rem;font-weight:800;margin:0 0 8px;">Cek Resi</h3>
+          <p style="color:var(--muted);font-size:.9rem;line-height:1.6;margin:0 0 18px;">Lacak status pengiriman paket berdasarkan nomor resi secara real-time.</p>
+          <a class="wa-link wa-btn" data-service="cek-resi" href="https://wa.me/6282183764505?text=Halo%20SPX%20Express%2C%20saya%20ingin%20cek%20resi%20paket." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:var(--wa);color:#fff;font-weight:700;font-size:.85rem;padding:10px 18px;border-radius:10px;text-decoration:none;min-height:44px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>Chat via WA</a>
+        </div>
+        <div class="card-hover reveal" style="background:var(--card);border:1px solid var(--border);border-radius:18px;padding:28px 24px;box-shadow:0 1px 3px rgba(0,0,0,.05);">
+          <div style="width:52px;height:52px;border-radius:14px;background:var(--accent2-soft);display:flex;align-items:center;justify-content:center;color:var(--accent2);margin-bottom:18px;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></svg></div>
+          <h3 style="font-size:1.15rem;font-weight:800;margin:0 0 8px;">Cek Paket</h3>
+          <p style="color:var(--muted);font-size:.9rem;line-height:1.6;margin:0 0 18px;">Periksa keberadaan dan kondisi paket yang sedang dalam proses distribusi.</p>
+          <a class="wa-link wa-btn" data-service="cek-paket" href="https://wa.me/6282183764505?text=Halo%20SPX%20Express%2C%20saya%20ingin%20cek%20status%20paket." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:var(--wa);color:#fff;font-weight:700;font-size:.85rem;padding:10px 18px;border-radius:10px;text-decoration:none;min-height:44px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>Chat via WA</a>
+        </div>
+        <div class="card-hover reveal" style="background:var(--card);border:1px solid var(--border);border-radius:18px;padding:28px 24px;box-shadow:0 1px 3px rgba(0,0,0,.05);">
+          <div style="width:52px;height:52px;border-radius:14px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:18px;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg></div>
+          <h3 style="font-size:1.15rem;font-weight:800;margin:0 0 8px;">Return &amp; Pickup</h3>
+          <p style="color:var(--muted);font-size:.9rem;line-height:1.6;margin:0 0 18px;">Layanan pengambilan paket (pickup) dan pengembalian barang (return) ke alamat Anda.</p>
+          <a class="wa-link wa-btn" data-service="return-pickup" href="https://wa.me/6282183764505?text=Halo%20SPX%20Express%2C%20saya%20ingin%20layanan%20return%20%26%20pickup." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:var(--wa);color:#fff;font-weight:700;font-size:.85rem;padding:10px 18px;border-radius:10px;text-decoration:none;min-height:44px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>Chat via WA</a>
+        </div>
+        <div class="card-hover reveal" style="background:var(--card);border:1px solid var(--border);border-radius:18px;padding:28px 24px;box-shadow:0 1px 3px rgba(0,0,0,.05);">
+          <div style="width:52px;height:52px;border-radius:14px;background:var(--accent2-soft);display:flex;align-items:center;justify-content:center;color:var(--accent2);margin-bottom:18px;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+          <h3 style="font-size:1.15rem;font-weight:800;margin:0 0 8px;">Kendala Paket Lainnya</h3>
+          <p style="color:var(--muted);font-size:.9rem;line-height:1.6;margin:0 0 18px;">Konsultasikan masalah paket lainnya — tertukar, rusak, atau belum diterima.</p>
+          <a class="wa-link wa-btn" data-service="lainnya" href="https://wa.me/6282183764505?text=Halo%20SPX%20Express%2C%20saya%20ada%20kendala%20paket%20lainnya." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:var(--wa);color:#fff;font-weight:700;font-size:.85rem;padding:10px 18px;border-radius:10px;text-decoration:none;min-height:44px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>Chat via WA</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOKASI HUB -->
+  <section id="lokasi" style="padding:72px 20px;background:linear-gradient(180deg,#fff 0%,#eef2f5 100%);">
+    <div style="max-width:1120px;margin:0 auto;">
+      <div style="text-align:center;max-width:640px;margin:0 auto 44px;" class="reveal">
+        <p style="font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent2);font-weight:700;margin:0 0 10px;">Jaringan Hub</p>
+        <h2 style="font-size:2.1rem;font-weight:900;letter-spacing:-.02em;margin:0 0 14px;line-height:1.2;">Dua Hub, Siap Jangkau Wilayah Anda</h2>
+        <p style="color:var(--muted);line-height:1.7;margin:0;">Pilih hub terdekat untuk layanan lebih cepat. Klik tombol WhatsApp untuk terhubung langsung dengan petugas.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;">
+        <div class="card-hover reveal" style="background:var(--card);border-radius:22px;overflow:hidden;border:1px solid var(--border);box-shadow:0 4px 20px rgba(15,23,42,.07);display:flex;flex-direction:column;">
+          <div style="background:linear-gradient(135deg,#f97316,#ea580c);padding:26px 28px;color:#fff;position:relative;overflow:hidden;">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span style="font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;opacity:.9;">Jawa Barat</span></div>
+            <h3 style="font-size:1.45rem;font-weight:900;margin:0;letter-spacing:-.01em;">SPX Express — Cikarang Barat Hub</h3>
+          </div>
+          <div style="padding:26px 28px;flex:1;display:flex;flex-direction:column;gap:16px;">
+            <div style="display:flex;gap:12px;align-items:flex-start;">
+              <div style="width:36px;height:36px;border-radius:10px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent);flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div><div style="font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:3px;">Alamat</div><p style="margin:0;font-size:.92rem;line-height:1.6;">Jl. Kp. Cikarang Jati, RT.04/RW.06, Kalijaya, Kec. Cikarang Bar., Kabupaten Bekasi, Jawa Barat 17530</p></div>
+            </div>
+            <div style="display:flex;gap:12px;align-items:center;">
+              <div style="width:36px;height:36px;border-radius:10px;background:var(--accent2-soft);display:flex;align-items:center;justify-content:center;color:var(--accent2);flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+              <div><div style="font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:3px;">Telepon / WhatsApp</div><a href="tel:082183764505" style="font-size:1.05rem;font-weight:800;color:var(--text);text-decoration:none;">0821-8376-4505</a></div>
+            </div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:8px;">
+              <a href="https://wa.me/6282183764505?text=Halo%20SPX%20Express%20Cikarang%2C%20saya
